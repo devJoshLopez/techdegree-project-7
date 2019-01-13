@@ -1,6 +1,7 @@
 var trafficChart = document.getElementById("trafficChart");
 var dailyTrafficChart = document.getElementById("dailyTrafficChart");
 var mobileUserChart = document.getElementById("mobileUserChart");
+var chart = document.getElementsByTagName("canvas");
 
 var lineChart = new Chart(trafficChart, {
   type: 'line',
@@ -60,22 +61,20 @@ var barChart = new Chart(dailyTrafficChart, {
         80,
         120
       ],
-      backgroundColor: '#2e4568',
-      borderWidth: 1,
-      borderColor: '#777',
-      hoverBorderWidth: 3,
-      hoverBorderColor: '#727984'
-
+      backgroundColor: '#7377bf'
+    //   borderWidth: 1,
+    //   borderColor: '#7377bf',
+    //   hoverBorderWidth: 3,
+    //   hoverBorderColor: '#7377bf'
     }]
   },
   options: {
-    responsive: true,
     legend: {
       display: false,
     },
     responsive: true,
     maintainAspectRatio: true,
-    aspectRatio: 3
+    aspectRatio: 2
   }
 });
 
