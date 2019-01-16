@@ -254,6 +254,7 @@ main .widget .widget-content {
 
 main .widget .widget-content .chart-container {
   position: relative;
+  width: 95vw;
 }
 
 main .widget .widget-content .flex-container>div {
@@ -597,6 +598,10 @@ input:checked+.switch-slider:before {
     font-size: 1em;
   }
 
+  main .widget .widget-content .chart-container {
+    width: 84vw;
+  }
+
   .switch-text {
     flex-basis: 30%;
   }
@@ -667,6 +672,14 @@ input:checked+.switch-slider:before {
       flex-grow: 1;
       margin: 20px;
       display: flex;
+    }
+
+    main .widget .widget-content .chart-container {
+      width: 90vw;
+      width: calc(100vw - 130px);
+    }
+    main .widget.daily-traffic-and-mobile-users .widget-content .chart-container {
+      width: 40vw;
     }
   
     .switch-text {
