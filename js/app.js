@@ -86,7 +86,7 @@ document.addEventListener('click', function (event) {
 
 
 // retrieve saved data from localStorage
-if (localStorage.length === 1) {
+if (localStorage.length > 0) {
 
   const jsonObj = localStorage.getItem('Key');
   const jsObj = JSON.parse(jsonObj);
